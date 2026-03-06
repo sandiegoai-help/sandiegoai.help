@@ -3,81 +3,193 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>San Diego Cloud Solutions | AWS Experts</title>
-  <meta name="description" content="AWS cloud architecture, migration, security & compliance services for growing businesses in San Diego and beyond."/>
-  <link rel="stylesheet" href="styles.css">
-
-
-
+  <title>San Diego Cloud Solutions | AWS Experts - Cloud Migration & Modernization</title>
+  <meta name="description" content="San Diego-based AWS experts helping businesses design, migrate, automate, and secure cloud infrastructure. Reduce costs and accelerate innovation with practical AWS solutions."/>
+  
+  <!-- Simple favicon (replace with your own later) -->
+  <link rel="icon" href="https://via.placeholder.com/32?text=SD" type="image/png"/>
+  
+  <style>
+    :root {
+      --primary: #0d6efd;      /* Bootstrap-like blue */
+      --primary-dark: #0b5ed7;
+      --text: #333;
+      --light: #f8f9fa;
+      --gray: #6c757d;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background-color: #fff;
+    }
+    
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: white;
+      padding: 80px 0 60px;
+      text-align: center;
+    }
+    
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    header p {
+      font-size: 1.4rem;
+      opacity: 0.95;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+    
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .service-tag {
+      background: rgba(255,255,255,0.25);
+      padding: 0.5rem 1.2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    
+    main {
+      padding: 60px 0;
+    }
+    
+    section {
+      margin-bottom: 60px;
+    }
+    
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--primary-dark);
+      text-align: center;
+    }
+    
+    .about-content {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.15rem;
+      text-align: center;
+    }
+    
+    .contact {
+      background: var(--light);
+      padding: 60px 0;
+      text-align: center;
+    }
+    
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      font-size: 1.3rem;
+      font-weight: 600;
+      padding: 1rem 2.2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      margin: 1.5rem 0;
+      transition: all 0.25s;
+      box-shadow: 0 4px 12px rgba(13,110,253,0.25);
+    }
+    
+    .btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(13,110,253,0.35);
+    }
+    
+    .email {
+      font-size: 1.3rem;
+      margin: 1rem 0;
+      color: var(--primary-dark);
+    }
+    
+    footer {
+      background: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 30px 0;
+      font-size: 0.95rem;
+    }
+    
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.4rem; }
+      header p  { font-size: 1.2rem; }
+      h2        { font-size: 2rem; }
+    }
+  </style>
 </head>
 <body>
-<!-- Navigation Bar -->
-<nav id="navbar">
-  <div class="nav-container">
-    <a href="/" class="logo">San Diego Cloud Solutions</a>
-    
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
+
+  <header>
+    <div class="container">
+      <h1>San Diego Cloud Solutions</h1>
+      <p>Modern Cloud Architecture for Growing Businesses</p>
+      
+      <div class="services">
+        <span class="service-tag">Design</span>
+        <span class="service-tag">Migration</span>
+        <span class="service-tag">Automation</span>
+        <span class="service-tag">Security</span>
+      </div>
     </div>
-  </div>
-</nav>
+  </header>
 
+  <main>
+    <div class="container">
+      <section id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+          <p>San Diego Cloud Solutions specializes in helping organizations modernize their infrastructure using AWS. Based in San Diego, California, we deliver practical, business-aligned cloud strategies that reduce costs and accelerate innovation.</p>
+          <p>We focus on real business outcomes — not just technology — so you get secure, scalable, and cost-efficient cloud solutions tailored to your growth.</p>
+        </div>
+      </section>
 
+      <!-- You can add more sections later, e.g. Services, Why Us, Case Studies -->
 
-
-<header id="home">
-  <h1>San Diego Cloud Solutions</h1>
-  <p>Modern Cloud Architecture for Growing Businesses</p>
-  <p>Design • Migration • Automation • Security — all on AWS</p>
-</header>
-
-<section id="services">
-  <h2>Our Services</h2>
-  <div class="services">
-    <div class="card">
-      <h3>AWS Architecture</h3>
-      <p>Scalable cloud infrastructure designed for performance, reliability, and cost optimization.</p>
-      <a href="#contact" class="btn">Get Started</a>
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2>Ready to Transform Your Infrastructure?</h2>
+          <p>Let's talk about how AWS can help your San Diego business save money and scale faster.</p>
+          
+          <a href="mailto:hello@sandiegocloudsolutions.com?subject=Consultation%20Request&body=Hi%20San%20Diego%20Cloud%20Solutions%20team,%0A%0AI%27m%20interested%20in%20learning%20more%20about%20your%20AWS%20services.%20My%20name%20is%20[Your%20Name]%20and%20my%20company%20is%20[Company%20Name].%0A%0ABest%20regards," class="btn">Send Message</a>
+          
+          <p class="email">Or email us directly:<br>
+            <strong>hello@sandiegocloudsolutions.com</strong>
+          </p>
+        </div>
+      </section>
     </div>
-    <div class="card">
-      <h3>Cloud Migration</h3>
-      <p>Seamless transition from on-premise, hybrid, or other clouds to AWS with minimal downtime.</p>
-      <a href="#contact" class="btn">Plan Your Migration</a>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 San Diego Cloud Solutions. All rights reserved.<br>
+      San Diego, California | AWS Consulting & Cloud Solutions</p>
     </div>
-    <div class="card">
-      <h3>Security & Compliance</h3>
-      <p>IAM best practices, encryption, CloudTrail monitoring, HIPAA/GDPR/SOC 2 readiness.</p>
-      <a href="#contact" class="btn">Secure Your Environment</a>
-    </div>
-  </div>
-</section>
-
-<section id="about">
-  <h2>About Us</h2>
-  <p>San Diego Cloud Solutions specializes in helping organizations modernize their infrastructure using AWS. Based in San Diego, California, we deliver practical, business-aligned cloud strategies that reduce costs and accelerate innovation.</p>
-</section>
-
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>Ready to transform your infrastructure? Let's talk.</p>
-  <!-- Simple mailto link as starting point -->
-  <a href="mailto:hello@sandiegocloudsolutions.com?subject=Consultation Request" class="btn">Send Message</a>
-  <p style="margin-top:20px;">Or email us directly: <strong>hello@sandiegocloudsolutions.com</strong></p>
-</section>
-
-<footer>
-  <p>&copy; 2026 San Diego Cloud Solutions. All rights reserved.</p>
-</footer>
-
+  </footer>
 
 </body>
 </html>
