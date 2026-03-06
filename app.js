@@ -1,8 +1,10 @@
 <script>
-  // Hamburger menu toggle 
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.querySelector('.nav-links');
+// Hamburger menu toggle
+const hamburger = document.getElementById('hamburger');
+const navLinks  = document.querySelector('.nav-links');
+const navbar    = document.getElementById('navbar');
 
+if (hamburger && navLinks) {
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navLinks.classList.toggle('active');
@@ -15,26 +17,33 @@
       navLinks.classList.remove('active');
     });
   });
+}
 
-  // Smooth scrolling for all anchor links (including nav)
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
+// Smooth scrolling for all anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href');
+    const target = document.querySelector(targetId);
 
-        window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    document.getElementById('navbar').style.background = '#0056b3'; // darker blue
-  } else {
-    document.getElementById('navbar').style.background = '#0d6efd';
-  }
-});
-      }
-    });
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    } else if (targetId !== '#') {
+      console.warn(`Anchor target not found: ${targetId}`);
+    }
   });
+});
+
+// Navbar background change on scroll — only added once
+if (navbar) {
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // Optional: trigger once on load in case page starts scrolled
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+}
 </script>
