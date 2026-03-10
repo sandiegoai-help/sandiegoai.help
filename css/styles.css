@@ -118,3 +118,25 @@ padding:40px;
 background:#0f172a;
 color:white;
 }
+
+
+.contact-form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:12px;
+border-radius:6px;
+border:1px solid #cbd5f5;
+font-size:16px;
+}
+
+.contact-form textarea{
+min-height:120px;
+}
+
